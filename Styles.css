@@ -1,12 +1,15 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.08em;
+  color: #eafafb;
+  overflow-x: hidden;
 }
 
 
@@ -25,10 +28,12 @@ body{
     flex-direction: column;
     height: 98vh;
     width: 20vw;
+    border-radius: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
+    margin-right: 10px;
     margin-top: 10px;
-    background-color: yellow;
+    background-color: #0B0B17;
 
 }
 
@@ -38,11 +43,12 @@ body{
     margin-top: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
+    border-radius: 10px;
     background-color: red;
 }
 
 .projects-section{
-    height: 100%;
+height: 100%;
 display: grid;
 display: grid; 
 grid-template-columns: 1fr; 
@@ -51,10 +57,51 @@ gap: 4% 0px;
 }
 
 .header{
-    background-color: aqua;
+    background-color: #101023;
     grid-area: 1 / 1 / 2 / 6;;
 }
 .projects{
-    background-color: aqua;
+    background-color: #191823;
     grid-area: 2 / 1 / 6 / 6;
+}
+.insearch{
+    border:0px;
+    background-color:#242436;
+}
+
+input { outline: none;
+        background-color: #242436;
+}
+
+
+
+.headersectiontop{
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    padding: 20px;
+    width: 100%;
+    height: 30%;
+}
+.headersectionbottom{
+    width: 100%;
+    height: 50%;
+}
+
+.profile{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 200px;
+}
+
+button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+
 }
