@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
+    <link rel="icon" href="/assets/favicon.png" />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -14,42 +15,52 @@
 
   <body>
     <div class="left-nav">
-      <ul>
-        <i class="fa-solid fa-house" style="font-size: x-large"></i>
-        <h2>Home</h2>
-      </ul>
-      <ul>
-        <i class="fa-solid fa-ghost" style="font-size: x-large"></i>
-        <h2>Profile</h2>
-      </ul>
-      <ul>
-        <i class="fa-solid fa-comment-dollar" style="font-size: x-large"></i>
-        <h2>Messages</h2>
-      </ul>
-      <ul>
-        <i class="fa-solid fa-circle-radiation" style="font-size: x-large"></i>
-        <h2>History</h2>
-      </ul>
-      <ul>
-        <i class="fa-solid fa-compass-drafting" style="font-size: x-large"></i>
-        Tasks
-      </ul>
-      <ul>
-        <i class="fa-solid fa-bomb" style="font-size: x-large"></i>
-        Communities
-      </ul>
-      <ul>
-        <i class="fa-solid fa-rectangle-list" style="font-size: x-large"></i>
-        Settings
-      </ul>
-      <ul>
-        <i class="fa-solid fa-book" style="font-size: x-large"></i>
-        Support
-      </ul>
-      <ul>
-        <i class="fa-solid fa-lemon" style="font-size: x-large"></i>
-        Privacy
-      </ul>
+      <div class="items-top">
+        <ul class="active">
+          <i class="fa-solid fa-house" style="font-size: x-large"></i>
+          <h3>Home</h3>
+        </ul>
+        <ul>
+          <i class="fa-solid fa-ghost" style="font-size: x-large"></i>
+          <h3>Profile</h3>
+        </ul>
+        <ul>
+          <i class="fa-solid fa-comment-dollar" style="font-size: x-large"></i>
+          <h3>Messages</h3>
+        </ul>
+        <ul>
+          <i
+            class="fa-solid fa-circle-radiation"
+            style="font-size: x-large"
+          ></i>
+          <h3>History</h3>
+        </ul>
+        <ul>
+          <i
+            class="fa-solid fa-compass-drafting"
+            style="font-size: x-large"
+          ></i>
+          <h3>Tasks</h3>
+        </ul>
+        <ul>
+          <i class="fa-solid fa-bomb" style="font-size: x-large"></i>
+          <h3>Communities</h3>
+        </ul>
+      </div>
+      <div class="items-bottom">
+        <ul>
+          <i class="fa-solid fa-cog" style="font-size: x-large"></i>
+          <h3>Settings</h3>
+        </ul>
+        <ul>
+          <i class="fa-solid fa-book" style="font-size: x-large"></i>
+          <h3>Support</h3>
+        </ul>
+        <ul>
+          <i class="fa-solid fa-lemon" style="font-size: x-large"></i>
+          <h3>Privacy</h3>
+        </ul>
+      </div>
     </div>
     <div class="right-content">
       <div class="projects-section">
@@ -72,8 +83,7 @@
           </div>
           <div class="headersectionbottom">
             <div class="left-section">
-              <div class="profile"></div>
-              <h1>Mauro G</h1>
+              <h1>Welcome</h1>
             </div>
             <div class="right-section">
               <div class="pill">New</div>
@@ -82,19 +92,68 @@
             </div>
           </div>
         </div>
-        <div class="projects">
-          <div class="test1">
-            <h3>Projects</h3>
-            <h3>Social</h3>
+        <div class="content">
+          <div class="projects">
+            <div class="test1">
+              <h2>Projects</h2>
+            </div>
+            <div class="card">
+              <div class="title">
+                <h3>Calculator</h3>
+                <img src="./assets/Calculator.svg" alt="Calculator-Icon" />
+              </div>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
+                earum vitae doloremque cupiditate voluptas. Molestias, fugiat
+                dignissimos illum omnis qui explicabo laboriosam deserunt esse,
+                aliquid,nihil odit.
+              </p>
+            </div>
+            <div class="card">
+              <div class="title">
+                <h3>Calculator</h3>
+                <img src="./assets/Calculator.svg" alt="Calculator-Icon" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="title">
+                <h3>Calculator</h3>
+                <img src="./assets/Calculator.svg" alt="Calculator-Icon" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="title">
+                <h3>Calculator</h3>
+                <img src="./assets/Calculator.svg" alt="Calculator-Icon" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="title">
+                <h3>Calculator</h3>
+                <img src="./assets/Calculator.svg" alt="Calculator-Icon" />
+              </div>
+            </div>
+            <div class="card">
+              <div class="title">
+                <h3>Calculator</h3>
+                <img src="./assets/Calculator.svg" alt="Calculator-Icon" />
+              </div>
+            </div>
           </div>
-          <div class="test">v</div>
-          <div class="test">v</div>
-          <div class="test">v</div>
-          <div class="test">v</div>
-          <div class="test">v</div>
-          <div class="test">v</div>
-          <div class="test">v</div>
-          <div class="test">v</div>
+          <div class="social">
+            <h2>Social</h2>
+            <div class="test-2">p</div>
+            <div class="medialinks">
+              <a href="github.com/uxmauro">
+                <i class="fa-brands fa-github" style="font-size: x-large"></i>
+              </a>
+              <a href="twitter.com/uuxmauro">
+                <i class="fa-brands fa-twitter" style="font-size: x-large"></i>
+              </a>
+              <i class="fa-solid fa-globe" style="font-size: x-large"></i>
+            </div>
+          </div>
         </div>
       </div>
     </div>

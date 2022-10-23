@@ -20,35 +20,45 @@ body{
     width:100%;
     height: 100%;
     min-height: 100%;
-    background-color: #010116;
+    background-color: #1E1E1E;
 
 }
 ul{
     display: flex;
     gap: 10px;
+    opacity: 60%;
+    cursor: pointer;
+}
+ul:hover{
+    opacity: 80%;
+}
+
+ul.active{
+    opacity: 100%;
 }
 
 .left-nav{
 
     display: flex;
     flex-direction: column;
-    height: 98vh;
+    justify-content: space-around;
+    border-radius: 10px;
+    height: 94vh;
     width: 20vw;
     padding-left: 2%;
     padding-top: 2%;
-    border-radius: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
-    margin-top: 10px;
-    background-color: #0A0A0B;
+    margin-top: 12px;
+    background-color: #171717;
 
 }
 
 .right-content{
     width: 80vw;
     height: 98vh;
-    margin-top: 10px;
+    margin-top: 12px;
     margin-right: 10px;
     margin-bottom: 10px;
     border-radius: 10px;
@@ -57,42 +67,66 @@ ul{
 .projects-section{
 height: 100%;
 display: grid;
-display: grid; 
 grid-template-columns: 1fr; 
-grid-template-rows: 0.5fr 1.5fr; 
+grid-template-rows: 0.4fr 1.5fr; 
 gap: 4% 0px; 
 }
 
 .header{
-    background-color: #0A0A0B;
+    background-color: #171717;
     grid-area: 1 / 1 / 2 / 6;;
     padding-left: 2%;
+    border-radius: 10px;
+
 }
 .projects{
     display: grid;
-    grid-template-columns: repeat(2, 1fr) 0.5fr;
-    grid-template-rows: repeat(4, 1fr) 0.5fr;
-    grid-column-gap: 16px;
+    width: 80vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.1fr repeat(3, 1fr);
+    grid-column-gap: 1vw;
     grid-row-gap: 16px;
+    padding-right: 4vw;
     margin-left: 40px;
-    margin-right: 20px;
 }
+
+.card{
+    width: 16vw;
+    height: 24vh;
+    border-radius: 20px;
+    padding: 16px 16px;
+    background: linear-gradient(180deg, #171717 0%, rgba(23, 23, 23, 0.76) 100%);
+}
+.test-2{
+    width: 98%;
+    height: 400px;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #171717 0%, rgba(23, 23, 23, 0.76) 100%);
+}
+
+
+
 .insearch{
     border:0px;
     width: 70%;
     margin: 10px;
     padding: 10px;
     border-radius: 20px;
-    background-color:#242436;
+    background-color:#2E2E2D;
 }
 
 input { 
         outline: none;
-        background-color: #242436;
+        background-color: #2E2E2D;
+
+    transition-duration: 200ms;
 }
 
 input:focus{
-border: 1.5px solid #fff;
+    background-color: #1f1f1f;
+    border: 0.5px solid rgba(255, 255, 255, 0.266);
+    transition-duration: 400ms;
+transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .headersectiontop{
@@ -112,12 +146,24 @@ border: 1.5px solid #fff;
 }
 
 .pill{
-    background-color: #38364D;
+    background-color: #2E2E2E;
     margin: 8px;
     padding: 8px 16px;
     border-radius: 40px;
+    border: 0.7px solid #FFFFFF;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.pill:hover{
+    opacity: 80%;
+    transition-duration: 400ms;
+}
 
-
+.left-section{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
 }
 
 
@@ -131,10 +177,17 @@ border: 1.5px solid #fff;
 .profile{
     height: 40px;
     width: 40px;
-    background-color: white;
+    background-image: url(https://avatars.githubusercontent.com/u/77753281?v=4);
+    background-size: contain;
     border-radius: 200px;
     margin-bottom: 10px;
     margin-right: 20px;
+    transition-duration: 400ms;
+}
+
+.profile:hover{
+    opacity: 80%;
+    transition-duration: 400ms;
 }
 
 .notificaton-profile{
@@ -164,25 +217,66 @@ button{
 
 }
 
-.test1{
-    width: 100%;
-    display: flex;
-    height: 32px;
-    grid-area: 1 / 1 / 2/ 4;
-}
 
-.test{
-    width: 98%;
-    height: 200px;
-    border-radius: 20px;
-    background-color: #fff;
-}
 
 
 .fa-bell{
     font-size: large;
     padding-right: 20px;
+    
+}
 
+.test1{
+    width: 100%;
+    display: flex;
+    height: 32px;
+    gap: 73%;
+    grid-area: 1 / 1 / 2/ 4;
+}
+.items-top{
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    margin-top: 4vh;
+    margin-left: 1vw;
+    gap: 32px;
+}
+.items-bottom{
+    height: 300px;
+    display: flex;
+    margin-bottom: 4vh;
+    margin-left: 1vw;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.social{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    padding-right: 2vw;
+    gap: 16px;
+}
+
+.card .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.medialinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8px;
+    gap: 12px
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
 }
 
 /* 
