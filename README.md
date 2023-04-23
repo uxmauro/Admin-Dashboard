@@ -8,5 +8,5 @@
 <br>
 
  Admin Dashboard for the Odin Project
-[Preview](https://uxmauro.com/Admin-Dashboard/) 👀
+[Preview](https://uxmauro.github.io/Admin-Dashboard/) 👀
 
